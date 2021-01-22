@@ -1,0 +1,94 @@
+#heading {
+    display: flex;
+    justify-content: center;
+    padding: 35px 20px;
+    margin-top: 5px;
+    background: #D6E03D;
+    border: white solid;
+    font: 50px white;
+    font-weight: bold;
+}
+
+.buttons_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.button {
+    background-color:rgba(243,143,29,.8);
+    border: white solid;
+    padding: 25px 10px;
+    margin-bottom: 20px;
+    font: 20px white;
+    color: white;
+    font-weight: bold;
+    min-width: 400px;
+    min-height: 10%;
+}
+
+button:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#login_name {
+    border: 0;
+    padding: 5px 10px;
+}
+
+#login_name_label {
+    margin-right: 20px;
+}
+
+#login_button {
+    background: #7d0049;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px 20px;
+}
+
+.hyperlink_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.today_date {
+    text-align: center;
+    font-weight: bold;
+    font: 40px white;
+}
+
+.stats_totals {
+    text-align: left;
+    font-weight: bold;
+    font: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+  border: solid white;
+}
+
+body {
+    background: #a4d6f4;
+    font-family: "Open Sans", Arial, sans-serif;
+}

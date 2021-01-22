@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    <title>GRPL Stats Keeper</title>
+    <script type=text/javascript>
+
+    </script>
+
+  </head>
+
+  <body>
+        <div class="hyperlink_container">
+            <a href="/stats_daily">Daily Stats</a>
+            <a href="/">Home Page</a>
+            <!-- <a href="/stats_total">All Stats</a> -->
+        </div>
+      {% block content %}
+      {% endblock %}
+  </body>
+</html>

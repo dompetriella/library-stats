@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p class="today_date">Date: {{ check_date }}
+
+    <p class="stats_totals">Reference Transaction(s): {{ action_totals['Reference Transaction'] }} </p>
+    <p class="stats_totals">Reference Transaction(s) Redirected: {{ action_totals['Reference Transaction Redirected']}} </p>
+    <p class="stats_totals">Phone Call(s): {{ action_totals['Phone Call']}} </p>
+    <p class="stats_totals">Reference Transaction(s) Not Completed: {{ action_totals['Reference Transaction Not Completed'] }} </p>
+
+
+    <table class='stats_table'>
+        <tr>
+            <th>Time</th>
+            <th>User</th>
+            <th>Transaction Type</th>
+        </tr>
+        {% for entry in daily_dicts %}
+            <tr>
+                <th> {{ entry['time'] }} </th>
+                <th> {{ entry['name'] }} </th>
+                <th> {{ entry['action'] }} </th>
+            </tr>
+        {% endfor %}
+
+{% endblock %}

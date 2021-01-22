@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 id="heading">GRPL STATS</h1>
+
+    <div class="login_container">
+        <form action="/login" method="POST">
+            <label for="login_name" id='login_name_label' required>Record stats for:  </label>
+            <input type="text" id="login_name" name="login_name">
+            <button id="login_button">LOGIN</button>
+        </form>
+    </div>
+
+    <div class="buttons_container">
+
+        <form action="/button_press" method="POST">
+            <button class="button" name="ref_trans" value="ref_trans">Reference Transaction</button>
+        </form>
+
+        <form action="/button_press" method="POST">
+            <button class="button" name="ref_redir" value="ref_redir">Reference Transaction Redirected</button>
+        </form>
+
+        <form action="/button_press" method="POST">
+            <button class="button" name="phone_call" value="phone_call">Phone Call</button>
+        </form>
+
+        <form action="/button_press" method="POST">
+            <button class="button" name="ref_nc" value="ref_nc">Reference Transaction Not Completed</button>
+        </form>
+
+    </div>
+{% endblock %}
